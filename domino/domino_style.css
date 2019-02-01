@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Baloo Thambi', cursive;
+
+}
+body{
+    background-image: url(http://bottlebrothers.ch/wp-content/uploads/2014/05/boards-black-line-texture-background-wood-wallpaper-wood-texture-wallpapers.jpg);
+    max-width: 100vw;
+    height: 100vh;
+    display:grid;
+    grid-template-rows: 20% 10% 50% 10%;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: ". h ."
+                         ". p1 ."
+                         "p2 b p4"
+                         ". p3 .";
+    grid-row-gap: 20px;
+    padding: 5px 5px;
+    justify-items: center;
+    align-items: center;
+
+}
+header{
+    grid-area: h;
+    font-size: 20px;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "l l" 
+                         "n q";
+    border-radius: 15px;
+    padding: 10px 10px;
+    justify-items: center;
+    align-items: center;
+}
+#logo{
+    grid-area: l;
+    display:grid;
+    border-radius: 15px;    
+    padding: 5px 5px;
+    justify-items: center;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+}
+#newgame{
+    grid-area: n;
+    display:grid;
+    border-radius: 15px;
+    padding: 10px 10px;
+    justify-items: center;
+    align-items: center;
+}
+#quitgame{
+    grid-area: q;
+    display:grid;
+    border-radius: 15px;
+    padding: 10px 10px;
+    justify-items: center;
+    align-items: center;
+    
+}
+.boardgame{
+    grid-area: b;
+    display:grid;
+    background-image: url(https://zupimages.net/up/19/04/hw5e.png);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    justify-items: center;
+    align-items: center;
+}
+.domino {
+    height: 60px;
+    width: 30px;
+}
+.player1{
+    grid-area: p1;
+    display:grid;  
+    background-color: rgba(61, 62, 71, 0.911);
+    border-radius: 15px; 
+    height: 70px;
+    width: 300px;
+    justify-items: center;
+    align-items: center;
+}
+.player2{
+    grid-area: p2;
+    display:grid;
+    background-color: rgba(61, 62, 71, 0.911);
+    border-radius: 15px;
+  
+    height: 100%;
+    width: 70px;
+    justify-items: center;
+    align-items: center;
+    background-position: right;
+}
+.player3{
+    grid-area: p3;
+    display:grid;
+    background-color: rgba(61, 62, 71, 0.911);
+    border-radius: 15px;
+    
+    height: 70px;
+    width: 300px;
+    justify-items: center;
+    align-items: center;
+}
+.player4{
+    grid-area: p4;
+    display:grid;
+    background-color: rgba(61, 62, 71, 0.911);
+    border-radius: 15px;
+    
+    height: 100%;
+    width: 70px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+   
